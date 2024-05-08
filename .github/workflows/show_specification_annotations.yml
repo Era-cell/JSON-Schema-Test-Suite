@@ -14,7 +14,7 @@ jobs:
 
       - name: Install dependencies
         run: pip install uritemplate
-        
+
       - name: Generate Annotations
         uses: actions/setup-python@v5
         with:
