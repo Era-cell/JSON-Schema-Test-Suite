@@ -184,6 +184,7 @@
     },
     {
         "description": "dependentSchemas with additionalProperties",
+        "specification": [ { "core":"10.3.2.3", "quote": "The value of \"additionalProperties\" MUST be a valid JSON Schema. Boolean \"false\" forbids everything." } ],
         "schema": {
             "$schema": "https://json-schema.org/draft/2020-12/schema",
             "properties": {"foo2": {}},

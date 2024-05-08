@@ -53,6 +53,7 @@ for file_path in Path("tests").rglob("*.json"):
     except json.JSONDecodeError:
         print(f"::error file={file_path}::Failed to parse JSON content")
 
+
     for test in json_content:
         if "specification" in test:
             line_number = find_test_line_number(changed_file_content, test.get("description") )
